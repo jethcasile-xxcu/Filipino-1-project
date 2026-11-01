@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--
+  index.html
+  The CONTENT of the website (text, lessons, menu).
+  Edit the text inside the tags to change what the site says.
+  Yellow [bracketed] text is a placeholder you still need to replace.
+  Styles are in styles.css. Menu behavior is in script.js.
+-->
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- Browser tab title -->
+  <title>Tite sa Website | Filipino 1</title>
+
+  <!-- Font (Literata). Loads from Google Fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&display=swap" rel="stylesheet">
+
+  <!-- Link to the separate stylesheet -->
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <!-- ===================================================
+       SIDEBAR MENU
+       Each link jumps to a section. The href value (after #)
+       must match the id of a section below.
+       =================================================== -->
+  <nav class="side" aria-label="Pangunahing menu">
+    <div class="brand">Sample pani(title)</div>
+    <ul>
+      <li><a href="#pabalat">Pabalat</a></li>
+      <li><a href="#panimula">Panimula</a></li>
+      <li><a href="#prelim">Prelim</a></li>
+      <li><a href="#midterm">Midterm</a></li>
+      <li><a href="#semi-finals">Semi-Finals</a></li>
+      <li><a href="#finals">Finals</a></li>
+      <li><a href="#sanggunian">Sanggunian</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ===================================================
+         COVER PAGE (Pabalat)
+         Website title, your name, course, teacher, school year.
+         =================================================== -->
+    <header class="cover" id="pabalat">
+      <div class="wrap">
+        <h1>tite sa website</h1>
+        <dl>
+          <dt>Pangalan</dt>
+          <dd>
+            <ul class="names">
+              <li>Jeth Casile</li>
+              <li>Vincent Clint Jumao-as</li>
+              <li>Van Lester Sumalinog</li>
+              <li>Kenneth Estrella</li>
+              <li>Kathlene Babatuan</li>
+              <li>Clarisse Pagobo</li>
+              <li>Cristy Jean Romano</li>
+              <li>Benedect Vincent Abella</li>
+              <li>Lewis Daniel Haar</li>
+            </ul>
+          </dd>
+
+          <dt>Kurso at seksyon</dt>
+          <dd><span class="ph">BSIT-1A</span></dd>
+
+          <dt>Asignatura</dt>
+          <dd>Filipino 1</dd>
+
+          <dt>Guro</dt>
+          <dd><span class="ph">Emmanuel Ando</span></dd>
+
+          <dt>Taong panuruan</dt>
+          <dd><span class="ph">2026-2027</span></dd>
+        </dl>
+      </div>
+    </header>
+
+    <div class="wrap">
+
+      <!-- ===================================================
+           PANIMULA (Introduction)
+           Purpose of the website and why Filipino 1 matters.
+           Write this in your own words.
+           =================================================== -->
+      <section class="block" id="panimula">
+        <h2>Panimula</h2>
+        <p class="term-intro">Layunin ng website na ito at kung bakit mahalaga ang Filipino 1.</p>
+        <div class="panel">
+          <p><span class="ph">pagprovide intawn mog info para ani</span></p>
+        </div>
+      </section>
+
+      <!-- ===================================================
+           PRELIM (first term)
+           Copy one <article class="lesson"> block to add a lesson.
+           Each lesson needs 4 examples in the <ul> list.
+           =================================================== -->
+      <section class="block" id="prelim">
+        <h2>Prelim</h2>
+        <p class="term-intro">Mga araling tinalakay sa unang termino.</p>
+
+        <!-- Prelim, Lesson 1 -->
+        <article class="lesson" id="prelim-1">
+          
+          <h3><span class="ph">Pamagat ng Aralin 1</span></h3>
+
+          <h4>Paliwanag</h4>
+          <p><span class="ph">putanginaaa skdivudfbisdbvisn</span></p>
+
+          <h4>Mga halimbawa</h4>
+          <ul>
+            <li><span class="ph">Halimbawa 1</span></li>
+            <li><span class="ph">Halimbawa 2</span></li>
+            <li><span class="ph">halimbawa 3</span></li>
+            <li><span class="ph">hamlilbawa 4</span></li>
+          </ul>
+
+          <h4>Biswal</h4>
+          <div class="visual"><span class="ph">pictture, diagram or other visual</span></div>
+
+          <h4>Karagdagang impormasyon</h4>
+          <p><span class="ph">acivity, mga quiz nga part for </span></p>
+        </article>
+
+        <!-- Prelim, Lesson 2 -->
+        <article class="lesson" id="prelim-2">
+         
+          <h3><span class="ph">Pamagat ng Aralin 2</span></h3>
+
+          <h4>Paliwanag</h4>
+          <p><span class="ph">skdicnidivd vidiuerri</span></p>
+
+          <h4>Mga halimbawa</h4>
+          <ul>
+            <li><span class="ph">Halimbawa 1</span></li>
+            <li><span class="ph">Halimbawa 2</span></li>
+            <li><span class="ph">Halimbawa 3</span></li>
+            <li><span class="ph">Halimbawa 4</span></li>
+          </ul>
+
+          <h4>Biswal</h4>
+          <div class="visual"><span class="ph">picpic</span></div>
+
+          <h4>Karagdagang impormasyon</h4>
+          <p><span class="ph">activies etc</span></p>
+        </article>
+      </section>
+
+      <!-- ===================================================
+           MIDTERM (second term)
+           =================================================== -->
+      <section class="block" id="midterm">
+        <h2>Midterm</h2>
+        <p class="term-intro">Mga araling tinalakay sa ikalawang termino.</p>
+
+        <!-- Midterm, Lesson 1 -->
+        <article class="lesson" id="midterm-1">
+         
+          <h3><span class="ph">Pamagat ng Aralin 1</span></h3>
+
+          <h4>Paliwanag</h4>
+          <p><span class="ph">exp</span></p>
+
+          <h4>Mga halimbawa</h4>
+          <ul>
+            <li><span class="ph">Halimbawa 1</span></li>
+            <li><span class="ph">Halimbawa 2</span></li>
+            <li><span class="ph">Halimbawa 3</span></li>
+            <li><span class="ph">Halimbawa 4</span></li>
+          </ul>
+
+          <h4>Biswal</h4>
+          <div class="visual"><span class="ph">sample picturw</span></div>
+
+          <h4>Karagdagang impormasyon</h4>
+          <p><span class="ph">quizzes, activities, etc.</span></p>
+        </article>
+
+        <!-- Midterm, Lesson 2 -->
+        <article class="lesson" id="midterm-2">
+         
+          <h3><span class="ph">Pamagat ng Aralin 2</span></h3>
+
+          <h4>Paliwanag</h4>
+          <p><span class="ph">skfidjdicijici</span></p>
+
+          <h4>Mga halimbawa</h4>
+          <ul>
+            <li><span class="ph">Halimbawa 1</span></li>
+            <li><span class="ph">Halimbawa 2</span></li>
+            <li><span class="ph">Halimbawa 3</span></li>
+            <li><span class="ph">Halimbawa 4</span></li>
+          </ul>
+
+          <h4>Biswal</h4>
+          <div class="visual"><span class="ph">larawan japon</span></div>
+
+          <h4>Karagdagang impormasyon</h4>
+          <p><span class="ph">quiz activyt</span></p>
+        </article>
+      </section>
+
+      <!-- ===================================================
+           SEMI-FINALS (third term)
+           =================================================== -->
+      <section class="block" id="semi-finals">
+        <h2>Semi-Finals</h2>
+        <p class="term-intro">Mga araling tinalakay sa ikatlong termino.</p>
+
+        <!-- Semi-Finals, Lesson 1 -->
+        <article class="lesson" id="semi-1">
+          
+          <h3><span class="ph">Pamagat ng Aralin 1</span></h3>
+
+          <h4>Paliwanag</h4>
+          <p><span class="ph">skicifibcxj</span></p>
+
+          <h4>Mga halimbawa</h4>
+          <ul>
+            <li><span class="ph">Halimbawa 1</span></li>
+            <li><span class="ph">Halimbawa 2</span></li>
+            <li><span class="ph">Halimbawa 3</span></li>
+            <li><span class="ph">Halimbawa 4</span></li>
+          </ul>
+
+          <h4>Biswal</h4>
+          <div class="visual"><span class="ph">visualizasypnis</span></div>
+
+          <h4>Karagdagang impormasyon</h4>
+          <p><span class="ph">quiz</span></p>
+        </article>
+
+        <!-- Semi-Finals, Lesson 2 -->
+        <article class="lesson" id="semi-2">
+          
+          <h3><span class="ph">Pamagat ng Aralin 2</span></h3>
+
+          <h4>Paliwanag</h4>
+          <p><span class="ph">skicifibcxj</span></p>
+
+          <h4>Mga halimbawa</h4>
+          <ul>
+            <li><span class="ph">Halimbawa 1</span></li>
+            <li><span class="ph">Halimbawa 2</span></li>
+            <li><span class="ph">Halimbawa 3</span></li>
+            <li><span class="ph">Halimbawa 4</span></li>
+          </ul>
+
+          <h4>Biswal</h4>
+          <div class="visual"><span class="ph">larawan japon</span></div>
+
+          <h4>Karagdagang impormasyon</h4>
+          <p><span class="ph">quiz</span></p>
+        </article>
+      </section>
+
+      <!-- ===================================================
+           FINALS (fourth term)
+           =================================================== -->
+      <section class="block" id="finals">
+        <h2>Finals</h2>
+        <p class="term-intro">Mga araling tinalakay sa huling termino.</p>
+
+        <!-- Finals, Lesson 1 -->
+        <article class="lesson" id="finals-1">
+         
+          <h3><span class="ph">Pamagat ng Aralin 1</span></h3>
+
+          <h4>Paliwanag</h4>
+          <p><span class="ph">explanastions</span></p>
+
+          <h4>Mga halimbawa</h4>
+          <ul>
+            <li><span class="ph">Halimbawa 1</span></li>
+            <li><span class="ph">Halimbawa 2</span></li>
+            <li><span class="ph">Halimbawa 3</span></li>
+            <li><span class="ph">Halimbawa 4</span></li>
+          </ul>
+
+          <h4>Biswal</h4>
+          <div class="visual"><span class="ph">pictue</span></div>
+
+          <h4>Karagdagang impormasyon</h4>
+          <p><span class="ph">activity,quiz</span></p>
+        </article>
+
+        <!-- Finals, Lesson 2 -->
+        <article class="lesson" id="finals-2">
+            
+          <h3><span class="ph">Pamagat ng Aralin 2</span></h3>
+
+          <h4>Paliwanag</h4>
+          <p><span class="ph">skiffdocxou vux</span></p>
+
+          <h4>Mga halimbawa</h4>
+          <ul>
+            <li><span class="ph">Halimbawa 1</span></li>
+            <li><span class="ph">Halimbawa 2</span></li>
+            <li><span class="ph">Halimbawa 3</span></li>
+            <li><span class="ph">Halimbawa 4</span></li>
+          </ul>
+
+          <h4>Biswal</h4>
+          <div class="visual"><span class="ph">putangina</span></div>
+
+          <h4>Karagdagang impormasyon</h4>
+          <p><span class="ph">lasmodre</span></p>
+        </article>
+      </section>
+
+      <!-- ===================================================
+           SANGGUNIAN (References)
+           List the books, websites, or materials you used.
+           =================================================== -->
+      <section class="block" id="sanggunian">
+        <h2>Sanggunian</h2>
+        <p class="term-intro">Mga pinagkunan ng impormasyon, kung mayroon.</p>
+        <div class="panel">
+          <p><span class="ph">mga link sa pictures(resources nga part)</span></p>
+        </div>
+      </section>
+
+      <!-- ===================================================
+           FOOTER (bottom of the page)
+           =================================================== -->
+      <footer>
+        <p>title sa wessbite · Filipino 1 · <span class="ph">2026-2027</span></p>
+      </footer>
+
+    </div>
+  </main>
+</div>
+
+<!-- Link to the separate script file (menu highlight) -->
+<script src="script.js"></script>
+</body>
+</html>
