@@ -17,7 +17,7 @@
   --radius: 4px;         /* corner roundness of boxes                 */
   --gutter: clamp(16px, 4vw, 48px); /* side spacing of the page       */
 }
- 
+
 /* Dark mode colors (used automatically when the device is in dark mode).
    Delete this whole block if you do not want dark mode. */
 @media (prefers-color-scheme: dark) {
@@ -34,19 +34,19 @@
     --ph-text: #f0c19e;
   }
 }
- 
- 
+
+
 /* ---------------------------------------------------------------------
    2. BASE STYLES
    Basic rules for the whole page: text size, line spacing, links.
    --------------------------------------------------------------------- */
 * { box-sizing: border-box; }
- 
+
 html {
   scroll-behavior: smooth;   /* smooth scrolling when clicking the menu */
   scroll-padding-top: 24px;  /* leaves space above a section when jumping to it */
 }
- 
+
 body {
   margin: 0;
   background: var(--paper);
@@ -55,16 +55,16 @@ body {
   font-size: 1.0625rem;      /* text size (about 17px) */
   line-height: 1.75;         /* space between lines */
 }
- 
+
 a { color: var(--blue); }
- 
+
 /* Outline shown when using the keyboard (Tab key) */
 :focus-visible {
   outline: 3px solid var(--sun);
   outline-offset: 2px;
 }
- 
- 
+
+
 /* ---------------------------------------------------------------------
    3. PAGE LAYOUT (sidebar + main content)
    --------------------------------------------------------------------- */
@@ -73,19 +73,19 @@ a { color: var(--blue); }
   grid-template-columns: 240px minmax(0, 1fr); /* sidebar width = 240px */
   min-height: 100vh;
 }
- 
+
 main {
   padding: 0 var(--gutter) 96px;
   min-width: 0;
 }
- 
+
 /* Keeps the content centered and not too wide for easy reading */
 .wrap {
   max-width: 720px;
   margin: 0 auto;
 }
- 
- 
+
+
 /* ---------------------------------------------------------------------
    4. SIDEBAR MENU
    The dark menu on the left (on phones it becomes a top bar).
@@ -99,7 +99,7 @@ nav.side {
   padding: 32px 20px;
   overflow-y: auto;
 }
- 
+
 /* Site title at the top of the sidebar */
 nav.side .brand {
   font-weight: 700;
@@ -109,13 +109,13 @@ nav.side .brand {
   margin-bottom: 16px;
   border-bottom: 2px solid var(--sun);
 }
- 
+
 nav.side ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
- 
+
 /* Each menu item */
 nav.side li a {
   display: block;
@@ -125,19 +125,19 @@ nav.side li a {
   text-decoration: none;
   border-radius: var(--radius);
 }
- 
+
 nav.side li a:hover {
   background: rgba(255, 255, 255, .08);
   color: #fff;
 }
- 
+
 /* The menu item for the section you are currently viewing */
 nav.side li a[aria-current="true"] {
   background: var(--blue);
   color: #fff;
 }
- 
- 
+
+
 /* ---------------------------------------------------------------------
    5. COVER PAGE (top blue banner)
    --------------------------------------------------------------------- */
@@ -148,11 +148,11 @@ nav.side li a[aria-current="true"] {
   margin: 0 calc(var(--gutter) * -1); /* stretches to the edges of the page */
   border-bottom: 6px solid var(--sun);
 }
- 
+
 .cover .wrap {
   max-width: 720px;
 }
- 
+
 /* Website title */
 .cover h1 {
   font-size: clamp(2rem, 5vw, 3rem);
@@ -160,7 +160,7 @@ nav.side li a[aria-current="true"] {
   margin: 0 0 24px;
   font-weight: 700;
 }
- 
+
 /* Name, course, teacher, school year list */
 .cover dl {
   display: grid;
@@ -168,7 +168,7 @@ nav.side li a[aria-current="true"] {
   gap: 8px 20px;
   margin: 0;
 }
- 
+
 .cover dt { opacity: .8; }
 .cover dd { margin: 0; font-weight: 600; }
 .cover .names {
@@ -176,7 +176,7 @@ nav.side li a[aria-current="true"] {
   margin: 0;
   padding: 0;
 }
- 
+
 /* ---------------------------------------------------------------------
    6. SECTION HEADINGS (Panimula, Prelim, Midterm, etc.)
    --------------------------------------------------------------------- */
@@ -184,7 +184,7 @@ section.block {
   padding-top: 56px;        /* space above each section */
   scroll-margin-top: 24px;
 }
- 
+
 /* Big section title, e.g. "Prelim" */
 h2 {
   font-size: 1.85rem;
@@ -192,25 +192,25 @@ h2 {
   margin: 0 0 8px;
   color: var(--ink);
 }
- 
+
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) h2 { color: var(--text); }
 }
- 
+
 /* Short description under each section title */
 .term-intro {
   color: var(--muted);
   margin: 0 0 32px;
 }
- 
+
 /* Lesson title, e.g. "Pamagat ng Aralin 1" */
 h3 {
   font-size: 1.35rem;
   margin: 0 0 12px;
   line-height: 1.3;
 }
- 
- 
+
+
 /* ---------------------------------------------------------------------
    7. LESSON CARDS
    The white box around each lesson.
@@ -222,7 +222,7 @@ article.lesson {
   padding: 28px 28px 24px;
   margin: 0 0 28px;
 }
- 
+
 /* Small line above the lesson title, e.g. "Aralin 1 · Draft" */
 article.lesson .status {
   display: inline-block;
@@ -230,7 +230,7 @@ article.lesson .status {
   color: var(--muted);
   margin-bottom: 8px;
 }
- 
+
 /* Labels inside a lesson: Paliwanag, Mga halimbawa, Biswal, etc. */
 article.lesson h4 {
   font-size: 1rem;
@@ -238,21 +238,21 @@ article.lesson h4 {
   color: var(--blue);
   font-weight: 700;
 }
- 
+
 article.lesson h4:first-of-type {
   margin-top: 12px;
 }
- 
+
 /* Example list */
 article.lesson ul {
   margin: 0;
   padding-left: 20px;
 }
- 
+
 article.lesson li { margin-bottom: 6px; }
 article.lesson p  { margin: 0; }
- 
- 
+
+
 /* ---------------------------------------------------------------------
    8. VISUAL / PICTURE BOX
    The dashed box where pictures or diagrams go.
@@ -265,15 +265,15 @@ article.lesson p  { margin: 0; }
   color: var(--muted);
   font-size: .95rem;
 }
- 
- 
+
+
 /* Placeholder text has no special highlighting. */
 .ph {
   background: transparent;
   color: inherit;
 }
- 
- 
+
+
 /* ---------------------------------------------------------------------
    10. PANIMULA AND SANGGUNIAN BOX
    The box with a yellow left border.
@@ -285,8 +285,8 @@ article.lesson p  { margin: 0; }
   border-radius: var(--radius);
   padding: 24px 28px;
 }
- 
- 
+
+
 /* ---------------------------------------------------------------------
    11. FOOTER (bottom of the page)
    --------------------------------------------------------------------- */
@@ -297,19 +297,19 @@ footer {
   color: var(--muted);
   font-size: .9rem;
 }
- 
- 
+
+
 /* ---------------------------------------------------------------------
    12. PHONE AND SMALL SCREEN STYLES
    Rules that apply only on smaller screens.
    --------------------------------------------------------------------- */
- 
+
 /* Tablets and phones: menu moves to a top bar */
 @media (max-width: 860px) {
   .shell {
     grid-template-columns: 1fr;
   }
- 
+
   nav.side {
     position: sticky;
     top: 0;
@@ -321,25 +321,73 @@ footer {
     overflow-x: auto;
     white-space: nowrap;
   }
- 
+
   nav.side .brand { display: none; }   /* hide title in the top bar */
   nav.side ul { display: flex; gap: 6px; }
   nav.side li a { padding: 8px 12px; }
 }
- 
+
 /* Small phones: tighter spacing */
 @media (max-width: 560px) {
   article.lesson { padding: 22px 18px; }
   .cover dl { grid-template-columns: 1fr; gap: 2px; }
   .cover dd { margin-bottom: 10px; }
 }
- 
- 
+
+
 /* ---------------------------------------------------------------------
    13. ACCESSIBILITY
    Turns off smooth scrolling for people who prefer less motion.
    --------------------------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
- html { scroll-behavior: auto; }
+  html { scroll-behavior: auto; }
 }
- 
+
+
+/* ---------------------------------------------------------------------
+   14. TABLES, DIAGRAMS, AND TIMELINES (Biswal boxes)
+   --------------------------------------------------------------------- */
+.biswal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .95rem;
+  margin: 0;
+}
+.biswal-table th,
+.biswal-table td {
+  border: 1px solid var(--rule);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.biswal-table th {
+  background: var(--blue);
+  color: #fff;
+  font-weight: 600;
+}
+.diagram-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.diagram-grid div {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 12px;
+  text-align: center;
+}
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 4px;
+  border-left: 3px solid var(--sun);
+}
+.timeline li {
+  margin: 0 0 12px 16px;
+}
+.timeline strong {
+  color: var(--blue);
+}
+@media (max-width: 560px) {
+  .diagram-grid { grid-template-columns: 1fr; }
+}

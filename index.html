@@ -3,7 +3,7 @@
   index.html
   The CONTENT of the website (text, lessons, menu).
   Edit the text inside the tags to change what the site says.
-  Yellow [bracketed] text is a placeholder you still need to replace.
+  [Bracketed] text is a placeholder you still need to replace.
   Styles are in styles.css. Menu behavior is in script.js.
 -->
 <html lang="tl">
@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
   <!-- Browser tab title -->
-  <title>Tite sa Website | Filipino 1</title>
+  <title>Sining ng Komunikasyon | Filipino 1</title>
 
   <!-- Font (Literata). Loads from Google Fonts. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&display=swap" rel="stylesheet">
 
   <!-- Link to the separate stylesheet -->
-  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -32,7 +32,7 @@
        must match the id of a section below.
        =================================================== -->
   <nav class="side" aria-label="Pangunahing menu">
-    <div class="brand">Sample pani(title)</div>
+    <div class="brand">Sining ng Komunikasyon</div>
     <ul>
       <li><a href="#pabalat">Pabalat</a></li>
       <li><a href="#panimula">Panimula</a></li>
@@ -49,10 +49,11 @@
     <!-- ===================================================
          COVER PAGE (Pabalat)
          Website title, your name, course, teacher, school year.
+         For a group project, add one <li> per name in the list.
          =================================================== -->
     <header class="cover" id="pabalat">
       <div class="wrap">
-        <h1>tite sa website</h1>
+        <h1>Sining ng Komunikasyon</h1>
         <dl>
           <dt>Pangalan</dt>
           <dd>
@@ -70,16 +71,16 @@
           </dd>
 
           <dt>Kurso at seksyon</dt>
-          <dd><span class="ph">BSIT-1A</span></dd>
+          <dd>BSIT-1A</dd>
 
           <dt>Asignatura</dt>
           <dd>Filipino 1</dd>
 
           <dt>Guro</dt>
-          <dd><span class="ph">Emmanuel Ando</span></dd>
+          <dd>Emmanuel Ando</dd>
 
           <dt>Taong panuruan</dt>
-          <dd><span class="ph">2026-2027</span></dd>
+          <dd>2026-2027</dd>
         </dl>
       </div>
     </header>
@@ -89,231 +90,299 @@
       <!-- ===================================================
            PANIMULA (Introduction)
            Purpose of the website and why Filipino 1 matters.
-           Write this in your own words.
+           Rewrite this in your own words.
            =================================================== -->
       <section class="block" id="panimula">
         <h2>Panimula</h2>
         <p class="term-intro">Layunin ng website na ito at kung bakit mahalaga ang Filipino 1.</p>
         <div class="panel">
-          <p><span class="ph">pagprovide intawn mog info para ani</span></p>
+          <p>Ang website na ito ay naglalaman ng mga aralin sa Filipino 1 mula Prelim hanggang Finals. Layunin nitong ipakita ang aming pag-unawa sa wikang Filipino at kung paano ito ginagamit sa araw-araw na komunikasyon. Sa pamamagitan ng mga paliwanag, halimbawa, at gawain, nakatutulong ito sa paglinang ng kaalaman at kasanayan sa wikang Filipino.</p>
         </div>
       </section>
 
       <!-- ===================================================
-           PRELIM (first term)
-           Copy one <article class="lesson"> block to add a lesson.
-           Each lesson needs 4 examples in the <ul> list.
+           PRELIM
            =================================================== -->
       <section class="block" id="prelim">
         <h2>Prelim</h2>
         <p class="term-intro">Mga araling tinalakay sa unang termino.</p>
 
-        <!-- Prelim, Lesson 1 -->
+        <!-- Lesson 1 -->
         <article class="lesson" id="prelim-1">
-          
-          <h3><span class="ph">Pamagat ng Aralin 1</span></h3>
+          <h3>Kahalagahan at Tungkulin ng Wika</h3>
 
           <h4>Paliwanag</h4>
-          <p><span class="ph">putanginaaa skdivudfbisdbvisn</span></p>
+          <p>Ang wika ay tulay sa pagkakaunawaan at nakatutulong sa paghubog ng kasanayan ng bawat tao. Mayroon itong pitong tungkulin: pang-instrumental, pangregulatori, pang-interaksyunal, pampersonal, pang-imahinasyon, pangheuristiko, at pang-impormatibo.</p>
 
           <h4>Mga halimbawa</h4>
           <ul>
-            <li><span class="ph">Halimbawa 1</span></li>
-            <li><span class="ph">Halimbawa 2</span></li>
-            <li><span class="ph">halimbawa 3</span></li>
-            <li><span class="ph">hamlilbawa 4</span></li>
+            <li>Pang-instrumental: &quot;Pahingi po ng tubig.&quot;</li>
+            <li>Pangregulatori: &quot;Bawal manigarilyo dito.&quot;</li>
+            <li>Pang-interaksyunal: &quot;Kumusta ka na?&quot;</li>
+            <li>Pang-impormatibo: &quot;May bagyo bukas.&quot;</li>
           </ul>
 
           <h4>Biswal</h4>
-          <div class="visual"><span class="ph">pictture, diagram or other visual</span></div>
+          <div class="diagram-grid">
+            <div><strong>Pang-instrumental</strong><br>Pahingi po ng tubig.</div>
+            <div><strong>Pangregulatori</strong><br>Bawal manigarilyo dito.</div>
+            <div><strong>Pang-interaksyunal</strong><br>Kumusta ka na?</div>
+            <div><strong>Pampersonal</strong><br>Masaya ako ngayon.</div>
+            <div><strong>Pang-imahinasyon</strong><br>Sumulat ng tula o kuwento.</div>
+            <div><strong>Pangheuristiko</strong><br>Bakit umiikot ang mundo?</div>
+            <div><strong>Pang-impormatibo</strong><br>May bagyo bukas.</div>
+          </div>
 
-          <h4>Karagdagang impormasyon</h4>
-          <p><span class="ph">acivity, mga quiz nga part for </span></p>
         </article>
 
-        <!-- Prelim, Lesson 2 -->
+        <!-- Lesson 2 -->
         <article class="lesson" id="prelim-2">
-         
-          <h3><span class="ph">Pamagat ng Aralin 2</span></h3>
+          <h3>Katangian at Varayti ng Wika</h3>
 
           <h4>Paliwanag</h4>
-          <p><span class="ph">skdicnidivd vidiuerri</span></p>
+          <p>Ayon kay Henry Gleason, ang wika ay sinasalita, masistema, arbitraryo, nagbabago, at malikhain. Ang varayti naman ay ang iba&#39;t ibang anyo ng wika, gaya ng idyolek, dayalek, sosyolek, etnolek, ekolek, pidgin, creole, at register.</p>
 
           <h4>Mga halimbawa</h4>
           <ul>
-            <li><span class="ph">Halimbawa 1</span></li>
-            <li><span class="ph">Halimbawa 2</span></li>
-            <li><span class="ph">Halimbawa 3</span></li>
-            <li><span class="ph">Halimbawa 4</span></li>
+            <li>Nagbabago ang wika: ang salitang &quot;lelong&quot; (matandang lalaki) ay bihira na ngayong gamitin.</li>
+            <li>Dayalek: sa Batangas, &quot;Bakit ga?&quot; ang tanong ng Tagalog na &quot;Bakit?&quot;</li>
+            <li>Idyolek: bawat mamamahayag ay may sariling tatak sa pananalita, gaya ng &quot;Hoy Gising!&quot; ni Ted Failon.</li>
+            <li>Etnolek: ang &quot;palangga&quot; ng ilang pangkat ay nangangahulugang minamahal.</li>
           </ul>
 
           <h4>Biswal</h4>
-          <div class="visual"><span class="ph">picpic</span></div>
+          <table class="biswal-table">
+            <tr><th>Varayti</th><th>Kahulugan</th><th>Halimbawa</th></tr>
+            <tr><td>Idyolek</td><td>Personal na istilo ng isang tao</td><td>Tatak ng isang mamamahayag</td></tr>
+            <tr><td>Dayalek</td><td>Batay sa rehiyon</td><td>&quot;Bakit ga?&quot; (Batangas)</td></tr>
+            <tr><td>Sosyolek</td><td>Batay sa grupo o katayuan</td><td>Salitang ginagamit ng barkada</td></tr>
+            <tr><td>Etnolek</td><td>Batay sa pangkat etniko</td><td>&quot;Palangga&quot; (minamahal)</td></tr>
+            <tr><td>Ekolek</td><td>Ginagamit sa loob ng tahanan</td><td>&quot;Nanay,&quot; &quot;Tatay&quot;</td></tr>
+            <tr><td>Pidgin</td><td>Pansamantalang wika ng dalawang magkaibang wika</td><td>Pinaghalong salita sa usapan</td></tr>
+            <tr><td>Creole</td><td>Naging pangunahing wika ng isang lugar</td><td>Chavacano</td></tr>
+            <tr><td>Register</td><td>Espesyal na salita ng isang larangan</td><td>&quot;Kapital&quot; sa negosyo at heograpiya</td></tr>
+          </table>
 
-          <h4>Karagdagang impormasyon</h4>
-          <p><span class="ph">activies etc</span></p>
+        </article>
+
+        <!-- Lesson 3 -->
+        <article class="lesson" id="prelim-3">
+          <h3>Filipino Bilang Wikang Pambansa</h3>
+
+          <h4>Paliwanag</h4>
+          <p>Nagsimula ang paglinang ng wikang pambansa sa Saligang Batas ng 1935. Pinili ang Tagalog bilang batayan noong 1937, tinawag itong Pilipino noong 1959, at ginawang Filipino sa Konstitusyon ng 1987. Patuloy itong yumayaman dahil sa iba pang wika ng Pilipinas.</p>
+
+          <h4>Mga halimbawa</h4>
+          <ul>
+            <li>1937: Pinili ang Tagalog bilang batayan ng wikang pambansa sa Kautusang Tagapagpaganap Blg. 134.</li>
+            <li>1940: Nagsimulang ituro ang wikang pambansa sa mga paaralan.</li>
+            <li>1959: Pinalitan ang tawag na &quot;Pilipino&quot; sa wikang pambansa.</li>
+            <li>1987: Ang wikang pambansa ay tinawag na &quot;Filipino&quot; sa Konstitusyon.</li>
+          </ul>
+
+          <h4>Biswal</h4>
+          <ul class="timeline">
+            <li><strong>1935:</strong> Nakasaad sa Konstitusyon ang pagbuo ng wikang pambansa.</li>
+            <li><strong>1937:</strong> Pinili ang Tagalog bilang batayan.</li>
+            <li><strong>1940:</strong> Nagsimulang ituro ang wikang pambansa sa mga paaralan.</li>
+            <li><strong>1946:</strong> Naging opisyal na wika ang wikang pambansa.</li>
+            <li><strong>1959:</strong> Tinawag itong &quot;Pilipino.&quot;</li>
+            <li><strong>1987:</strong> Tinawag itong &quot;Filipino&quot; sa Konstitusyon.</li>
+          </ul>
+
         </article>
       </section>
 
       <!-- ===================================================
-           MIDTERM (second term)
+           MIDTERM
            =================================================== -->
       <section class="block" id="midterm">
         <h2>Midterm</h2>
         <p class="term-intro">Mga araling tinalakay sa ikalawang termino.</p>
 
-        <!-- Midterm, Lesson 1 -->
+        <!-- Lesson 1 -->
         <article class="lesson" id="midterm-1">
-         
-          <h3><span class="ph">Pamagat ng Aralin 1</span></h3>
+          <h3>Alpabeto at Kasaysayan ng Ortograpiyang Filipino</h3>
 
           <h4>Paliwanag</h4>
-          <p><span class="ph">exp</span></p>
+          <p>Bago dumating ang mga Kastila, may sariling sistema ng pagsulat ang mga Pilipino na tinatawag na Alibata. Pinalitan ito ng Alpabetong Romano, at kalaunan ay nabuo ang Abakada na may 20 titik. Noong 1971, dinagdagan ito ng mga bagong titik.</p>
 
           <h4>Mga halimbawa</h4>
           <ul>
-            <li><span class="ph">Halimbawa 1</span></li>
-            <li><span class="ph">Halimbawa 2</span></li>
-            <li><span class="ph">Halimbawa 3</span></li>
-            <li><span class="ph">Halimbawa 4</span></li>
+            <li>Alibata: ang sinaunang sistema ng pagsulat ng mga ninuno.</li>
+            <li>Abakada: binubuo ng 15 katinig at 5 patinig.</li>
+            <li>Dinagdag na titik: C sa &quot;Cebu&quot;, F sa &quot;Filipino&quot;, J sa &quot;Juan&quot;, at CH sa &quot;Chino&quot;.</li>
+            <li>Ang Sobre la Nueva Ortografia de la Lengua Tagala ni Rizal ay naglahad ng mga tuntunin ng bagong ortograpiyang Tagalog.</li>
           </ul>
 
           <h4>Biswal</h4>
-          <div class="visual"><span class="ph">sample picturw</span></div>
+          <ul class="timeline">
+            <li><strong>Bago ang mga Kastila:</strong> Alibata</li>
+            <li><strong>Panahon ng Kastila:</strong> Alpabetong Romano</li>
+            <li><strong>Pagkatapos ng 1940:</strong> Binalangkas ni Lope K. Santos ang Abakada, na may 20 titik (15 katinig at 5 patinig)</li>
+            <li><strong>1971:</strong> Dinagdagan ng mga bagong titik</li>
+          </ul>
 
-          <h4>Karagdagang impormasyon</h4>
-          <p><span class="ph">quizzes, activities, etc.</span></p>
         </article>
 
-        <!-- Midterm, Lesson 2 -->
+        <!-- Lesson 2 -->
         <article class="lesson" id="midterm-2">
-         
-          <h3><span class="ph">Pamagat ng Aralin 2</span></h3>
+          <h3>Pantig at Pagpapantig</h3>
 
           <h4>Paliwanag</h4>
-          <p><span class="ph">skfidjdicijici</span></p>
+          <p>Ang pantig ay isang bugso ng tinig sa pagbigkas ng salita. Ginagamit ang K para sa katinig at P para sa patinig upang ipakita ang kayarian ng pantig. Kapag magkasunod ang dalawang patinig, hiwalay itong pantig, at may mga tuntunin din sa pag-uulit ng pantig.</p>
 
           <h4>Mga halimbawa</h4>
           <ul>
-            <li><span class="ph">Halimbawa 1</span></li>
-            <li><span class="ph">Halimbawa 2</span></li>
-            <li><span class="ph">Halimbawa 3</span></li>
-            <li><span class="ph">Halimbawa 4</span></li>
+            <li>aalis: a-a-lis (magkasunod na patinig)</li>
+            <li>maaga: ma-a-ga</li>
+            <li>basa: ba-ba-sa (inuulit ang katinig at patinig)</li>
+            <li>takbo: ta-tak-bo (inuulit ang unang katinig at patinig)</li>
           </ul>
 
           <h4>Biswal</h4>
-          <div class="visual"><span class="ph">larawan japon</span></div>
+          <table class="biswal-table">
+            <tr><th>Kayarian</th><th>Halimbawa</th><th>Pantig</th></tr>
+            <tr><td>P</td><td>upa</td><td>u-pa</td></tr>
+            <tr><td>KP</td><td>mali</td><td>ma-li</td></tr>
+            <tr><td>PK</td><td>isda</td><td>is-da</td></tr>
+            <tr><td>KPK</td><td>libro</td><td>lib-ro</td></tr>
+            <tr><td>KKP</td><td>prito</td><td>pri-to</td></tr>
+          </table>
 
-          <h4>Karagdagang impormasyon</h4>
-          <p><span class="ph">quiz activyt</span></p>
         </article>
       </section>
 
       <!-- ===================================================
-           SEMI-FINALS (third term)
+           SEMI-FINALS
            =================================================== -->
       <section class="block" id="semi-finals">
         <h2>Semi-Finals</h2>
         <p class="term-intro">Mga araling tinalakay sa ikatlong termino.</p>
 
-        <!-- Semi-Finals, Lesson 1 -->
+        <!-- Lesson 1 -->
         <article class="lesson" id="semi-1">
-          
-          <h3><span class="ph">Pamagat ng Aralin 1</span></h3>
+          <h3>Uri ng Pangungusap ayon sa Kayarian</h3>
 
           <h4>Paliwanag</h4>
-          <p><span class="ph">skicifibcxj</span></p>
+          <p>Ayon sa kayarian, ang pangungusap ay maaaring payak (isang paksa at isang panaguri), tambalan (dalawang kaisipang pinag-ugnay ng pangatnig), hugnayan (may sugnay na makapag-iisa at sugnay na hindi makapag-iisa), o langkapan (isa o higit pang sugnay).</p>
 
           <h4>Mga halimbawa</h4>
           <ul>
-            <li><span class="ph">Halimbawa 1</span></li>
-            <li><span class="ph">Halimbawa 2</span></li>
-            <li><span class="ph">Halimbawa 3</span></li>
-            <li><span class="ph">Halimbawa 4</span></li>
+            <li>Payak: &quot;Masipag na nagluluto si Nanay.&quot;</li>
+            <li>Tambalan: &quot;Nag-aral ako nang mabuti, ngunit mababa pa rin ang nakuha kong marka.&quot;</li>
+            <li>Hugnayan: &quot;Sasama ako sa inyo kapag natapos na ang gawain ko.&quot;</li>
+            <li>Langkapan: &quot;Magiging maayos ang proyekto kung magtutulungan tayo at matatapos natin ito bago ang Biyernes.&quot;</li>
           </ul>
 
           <h4>Biswal</h4>
-          <div class="visual"><span class="ph">visualizasypnis</span></div>
+          <div class="diagram-grid">
+            <div><strong>Payak</strong><br>Masipag na nagluluto si Nanay.</div>
+            <div><strong>Tambalan</strong><br>Nag-aral ako, ngunit mababa ang marka.</div>
+            <div><strong>Hugnayan</strong><br>Sasama ako kapag natapos ko ang gawain.</div>
+            <div><strong>Langkapan</strong><br>Magiging maayos ang proyekto kung magtutulungan tayo.</div>
+          </div>
 
-          <h4>Karagdagang impormasyon</h4>
-          <p><span class="ph">quiz</span></p>
         </article>
 
-        <!-- Semi-Finals, Lesson 2 -->
+        <!-- Lesson 2 -->
         <article class="lesson" id="semi-2">
-          
-          <h3><span class="ph">Pamagat ng Aralin 2</span></h3>
+          <h3>Uri ng Pangungusap ayon sa Gamit</h3>
 
           <h4>Paliwanag</h4>
-          <p><span class="ph">skicifibcxj</span></p>
+          <p>Ayon sa gamit, ang pangungusap ay maaaring paturol (nagsasalaysay), patanong (nagtatanong), padamdam (nagpapahayag ng damdamin), o pautos/pakiusap (nag-uutos o humihiling).</p>
 
           <h4>Mga halimbawa</h4>
           <ul>
-            <li><span class="ph">Halimbawa 1</span></li>
-            <li><span class="ph">Halimbawa 2</span></li>
-            <li><span class="ph">Halimbawa 3</span></li>
-            <li><span class="ph">Halimbawa 4</span></li>
+            <li>Paturol: &quot;Maaraw ngayong hapon sa Cebu.&quot;</li>
+            <li>Patanong: &quot;Anong oras ka uuwi mamaya?&quot;</li>
+            <li>Padamdam: &quot;Ang ganda naman ng bagong bahay ninyo!&quot;</li>
+            <li>Pautos o pakiusap: &quot;Pakibukas nga ang bintana.&quot;</li>
           </ul>
 
           <h4>Biswal</h4>
-          <div class="visual"><span class="ph">larawan japon</span></div>
+          <table class="biswal-table">
+            <tr><th>Uri</th><th>Bantas</th><th>Halimbawa</th></tr>
+            <tr><td>Paturol</td><td>.</td><td>Maaraw ngayong hapon.</td></tr>
+            <tr><td>Patanong</td><td>?</td><td>Anong oras ka uuwi?</td></tr>
+            <tr><td>Padamdam</td><td>!</td><td>Ang ganda naman nito!</td></tr>
+            <tr><td>Pautos o pakiusap</td><td>.</td><td>Pakibukas nga ang bintana.</td></tr>
+          </table>
 
-          <h4>Karagdagang impormasyon</h4>
-          <p><span class="ph">quiz</span></p>
+        </article>
+
+        <!-- Lesson 3 -->
+        <article class="lesson" id="semi-3">
+          <h3>Pagbabago ng Anyo ng Salita</h3>
+
+          <h4>Paliwanag</h4>
+          <p>Nagbabago ang anyo ng mga salita kapag nagdaragdag ng panlapi. Kabilang dito ang asimilasyon (nagbabago dahil sa katabing tunog), pagpapalit ng ponema, paglilipat ng ponema, pagdaragdag ng hulapi, at pagkakaltas ng tunog.</p>
+
+          <h4>Mga halimbawa</h4>
+          <ul>
+            <li>Asimilasyon: sing + lakas = sinlakas</li>
+            <li>Pagpapalit: ma + dumi = marumi</li>
+            <li>Paglilipat: y + in + akap = yinakap, na naging niyakap</li>
+            <li>Pagkakaltas: bukas + an = bukasan, na naging buksan</li>
+          </ul>
+
+          <h4>Biswal</h4>
+          <table class="biswal-table">
+            <tr><th>Uri</th><th>Halimbawa</th><th>Resulta</th></tr>
+            <tr><td>Asimilasyon</td><td>sing + lakas</td><td>sinlakas</td></tr>
+            <tr><td>Pagpapalit</td><td>ma + dumi</td><td>marumi</td></tr>
+            <tr><td>Paglilipat</td><td>y + in + akap</td><td>niyakap</td></tr>
+            <tr><td>Pagkakaltas</td><td>bukas + an</td><td>buksan</td></tr>
+          </table>
+
         </article>
       </section>
 
       <!-- ===================================================
-           FINALS (fourth term)
+           FINALS (still in progress)
            =================================================== -->
       <section class="block" id="finals">
         <h2>Finals</h2>
         <p class="term-intro">Mga araling tinalakay sa huling termino.</p>
 
-        <!-- Finals, Lesson 1 -->
+        <!-- Lesson 1 -->
         <article class="lesson" id="finals-1">
-         
-          <h3><span class="ph">Pamagat ng Aralin 1</span></h3>
+          <h3><span class="ph">taytol 1</span></h3>
 
           <h4>Paliwanag</h4>
-          <p><span class="ph">explanastions</span></p>
+          <p><span class="ph">putangina ni nga part</span></p>
 
           <h4>Mga halimbawa</h4>
           <ul>
-            <li><span class="ph">Halimbawa 1</span></li>
-            <li><span class="ph">Halimbawa 2</span></li>
-            <li><span class="ph">Halimbawa 3</span></li>
-            <li><span class="ph">Halimbawa 4</span></li>
+            <li><span class="ph">jeohlee</span></li>
+            <li><span class="ph">jeohlee</span></li>
+            <li><span class="ph">jeohlee</span></li>
+            <li><span class="ph">jeohlee</span></li>
           </ul>
 
           <h4>Biswal</h4>
-          <div class="visual"><span class="ph">pictue</span></div>
+          <div class="visual"><span class="ph">lala</span></div>
 
-          <h4>Karagdagang impormasyon</h4>
-          <p><span class="ph">activity,quiz</span></p>
         </article>
 
-        <!-- Finals, Lesson 2 -->
+        <!-- Lesson 2 -->
         <article class="lesson" id="finals-2">
-            
-          <h3><span class="ph">Pamagat ng Aralin 2</span></h3>
+          <h3><span class="ph">walalang</span></h3>
 
           <h4>Paliwanag</h4>
-          <p><span class="ph">skiffdocxou vux</span></p>
+          <p><span class="ph">ambot lang</span></p>
 
           <h4>Mga halimbawa</h4>
           <ul>
-            <li><span class="ph">Halimbawa 1</span></li>
-            <li><span class="ph">Halimbawa 2</span></li>
-            <li><span class="ph">Halimbawa 3</span></li>
-            <li><span class="ph">Halimbawa 4</span></li>
+            <li><span class="ph">jeohlee</span></li>
+            <li><span class="ph">jeohlee</span></li>
+            <li><span class="ph">jeohlee</span></li>
+            <li><span class="ph">jeohlee</span></li>
           </ul>
 
           <h4>Biswal</h4>
-          <div class="visual"><span class="ph">putangina</span></div>
+          <div class="visual"><span class="ph">tangina lala</span></div>
 
-          <h4>Karagdagang impormasyon</h4>
-          <p><span class="ph">lasmodre</span></p>
         </article>
       </section>
 
@@ -323,9 +392,11 @@
            =================================================== -->
       <section class="block" id="sanggunian">
         <h2>Sanggunian</h2>
-        <p class="term-intro">Mga pinagkunan ng impormasyon, kung mayroon.</p>
+        <p class="term-intro">Mga pinagkunan ng impormasyon.</p>
         <div class="panel">
-          <p><span class="ph">mga link sa pictures(resources nga part)</span></p>
+          <p>Alcaraz, C. V., Jocson, M. O., &amp; Villafuerte, P. V. <em>Komunikasyon sa Akademikong Filipino</em>.</p>
+          <p>Mga modyul ng Cordova Public College, Filipino 1 – Sining ng Komunikasyon (Modyul 1–3).</p>
+          <p><span class="ph">sdodmcoudnfon</span></p>
         </div>
       </section>
 
@@ -333,7 +404,7 @@
            FOOTER (bottom of the page)
            =================================================== -->
       <footer>
-        <p>title sa wessbite · Filipino 1 · <span class="ph">2026-2027</span></p>
+        <p>Sining ng Komunikasyon · Filipino 1 · 2026-2027</p>
       </footer>
 
     </div>
