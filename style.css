@@ -391,3 +391,39 @@ footer {
 @media (max-width: 560px) {
   .diagram-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ---------------------------------------------------------------------
+   16. TABLET AND PHONE REFINEMENTS
+   Extra adjustments so the site fits tablets and phones better.
+   --------------------------------------------------------------------- */
+
+/* Wide tables scroll sideways inside their own box instead of squeezing */
+.biswal-table {
+  display: block;
+  overflow-x: auto;
+}
+
+/* Tablets (561px to 860px) */
+@media (min-width: 561px) and (max-width: 860px) {
+  .cover { padding: 56px var(--gutter) 48px; }
+  .cover h1 { font-size: 2.4rem; }
+  .diagram-grid { grid-template-columns: 1fr 1fr; }
+  article.lesson { padding: 24px; }
+}
+
+/* Phones (560px and below) */
+@media (max-width: 560px) {
+  body { font-size: 1rem; }
+  .cover { padding: 40px var(--gutter) 36px; }
+  .cover h1 { font-size: 1.85rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.2rem; }
+  section.block { padding-top: 40px; }
+  .visual { padding: 24px 12px; }
+  .diagram-grid { grid-template-columns: 1fr; }
+  .biswal-table th,
+  .biswal-table td { padding: 6px 8px; font-size: .9rem; }
+  nav.side li a { padding: 8px 10px; }
+  footer { margin-top: 48px; }
+}
