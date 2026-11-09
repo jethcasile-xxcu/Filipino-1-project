@@ -1,9 +1,3 @@
-/* =====================================================================
-   script.js
-   Controls small behaviors of the website.
-   Right now it only highlights the menu item for the section you are
-   viewing. You normally do not need to change this file.
-   ===================================================================== */
 
 (function () {
   // 1. Find all menu links (the ones starting with #) in the sidebar

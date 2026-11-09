@@ -1,17 +1,8 @@
 <!DOCTYPE html>
-<!--
-  index.html
-  The CONTENT of the website (text, lessons, menu).
-  Edit the text inside the tags to change what the site says.
-  [Bracketed] text is a placeholder you still need to replace.
-  Styles are in styles.css. Menu behavior is in script.js.
--->
 <html lang="tl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-
-  <!-- Browser tab title -->
   <title>Sining ng Komunikasyon | Filipino 1</title>
 
   <!-- Font (Literata). Loads from Google Fonts. -->
@@ -25,12 +16,6 @@
 <body>
 
 <div class="shell">
-
-  <!-- ===================================================
-       SIDEBAR MENU
-       Each link jumps to a section. The href value (after #)
-       must match the id of a section below.
-       =================================================== -->
   <nav class="side" aria-label="Pangunahing menu">
     <div class="brand">Sining ng Komunikasyon</div>
     <ul>
@@ -45,12 +30,6 @@
   </nav>
 
   <main>
-
-    <!-- ===================================================
-         COVER PAGE (Pabalat)
-         Website title, your name, course, teacher, school year.
-         For a group project, add one <li> per name in the list.
-         =================================================== -->
     <header class="cover" id="pabalat">
       <div class="wrap">
         <h1>Sining ng Komunikasyon</h1>
@@ -86,12 +65,6 @@
     </header>
 
     <div class="wrap">
-
-      <!-- ===================================================
-           PANIMULA (Introduction)
-           Purpose of the website and why Filipino 1 matters.
-           Rewrite this in your own words.
-           =================================================== -->
       <section class="block" id="panimula">
         <h2>Panimula</h2>
         <p class="term-intro">Layunin ng website na ito at kung bakit mahalaga ang Filipino 1.</p>
@@ -100,9 +73,7 @@
         </div>
       </section>
 
-      <!-- ===================================================
-           PRELIM
-           =================================================== -->
+
       <section class="block" id="prelim">
         <h2>Prelim</h2>
         <p class="term-intro">Mga araling tinalakay sa unang termino.</p>
@@ -132,7 +103,6 @@
             <div><strong>Pangheuristiko</strong><br>Bakit umiikot ang mundo?</div>
             <div><strong>Pang-impormatibo</strong><br>May bagyo bukas.</div>
           </div>
-
         </article>
 
         <!-- Lesson 2 -->
@@ -193,9 +163,6 @@
         </article>
       </section>
 
-      <!-- ===================================================
-           MIDTERM
-           =================================================== -->
       <section class="block" id="midterm">
         <h2>Midterm</h2>
         <p class="term-intro">Mga araling tinalakay sa ikalawang termino.</p>
@@ -253,9 +220,6 @@
         </article>
       </section>
 
-      <!-- ===================================================
-           SEMI-FINALS
-           =================================================== -->
       <section class="block" id="semi-finals">
         <h2>Semi-Finals</h2>
         <p class="term-intro">Mga araling tinalakay sa ikatlong termino.</p>
@@ -338,71 +302,59 @@
         </article>
       </section>
 
-      <!-- ===================================================
-           FINALS (still in progress)
-           =================================================== -->
       <section class="block" id="finals">
         <h2>Finals</h2>
         <p class="term-intro">Mga araling tinalakay sa huling termino.</p>
 
         <!-- Lesson 1 -->
         <article class="lesson" id="finals-1">
-          <h3><span class="ph">taytol 1</span></h3>
+          <h3>Uri ng Pangungusap Ayon sa Ayos</h3>
 
           <h4>Paliwanag</h4>
-          <p><span class="ph">putangina ni nga part</span></p>
+          <p>Ayon sa ayos, may dalawang uri ng pangungusap: karaniwang ayos at di-karaniwang ayos. Sa karaniwang ayos, nauuna ang panaguri bago ang simuno. Sa di-karaniwang ayos, nauuna ang simuno, at karaniwang ginagamit ang &quot;ay&quot; upang pag-ugnayin ang simuno at panaguri.</p>
 
           <h4>Mga halimbawa</h4>
+          <p><strong>Karaniwang ayos</strong></p>
           <ul>
-            <li><span class="ph">jeohlee</span></li>
-            <li><span class="ph">jeohlee</span></li>
-            <li><span class="ph">jeohlee</span></li>
-            <li><span class="ph">jeohlee</span></li>
+            <li>Masarap magluto ang aking ina.</li>
+            <li>Nagbabasa ng libro si Ana.</li>
+            <li>Tahimik ang silid-aklatan.</li>
+            <li>Naglalaro sa labas ang mga bata.</li>
+          </ul>
+          <p><strong>Di-karaniwang ayos</strong></p>
+          <ul>
+            <li>Ang aking ina ay masarap magluto.</li>
+            <li>Si Ana ay nagbabasa ng libro.</li>
+            <li>Ang silid-aklatan ay tahimik.</li>
+            <li>Ang mga bata ay naglalaro sa labas.</li>
           </ul>
 
           <h4>Biswal</h4>
-          <div class="visual"><span class="ph">lala</span></div>
-
+          <table class="biswal-table">
+            <tr><th>Uri</th><th>Pangungusap</th><th>Simuno</th><th>Panaguri</th></tr>
+            <tr><td>Karaniwang ayos</td><td>Masarap magluto ang aking ina.</td><td>ang aking ina</td><td>Masarap magluto</td></tr>
+            <tr><td>Karaniwang ayos</td><td>Nagbabasa ng libro si Ana.</td><td>si Ana</td><td>Nagbabasa ng libro</td></tr>
+            <tr><td>Karaniwang ayos</td><td>Tahimik ang silid-aklatan.</td><td>ang silid-aklatan</td><td>Tahimik</td></tr>
+            <tr><td>Karaniwang ayos</td><td>Naglalaro sa labas ang mga bata.</td><td>ang mga bata</td><td>Naglalaro sa labas</td></tr>
+            <tr><td>Di-karaniwang ayos</td><td>Ang aking ina ay masarap magluto.</td><td>Ang aking ina</td><td>ay masarap magluto</td></tr>
+            <tr><td>Di-karaniwang ayos</td><td>Si Ana ay nagbabasa ng libro.</td><td>Si Ana</td><td>ay nagbabasa ng libro</td></tr>
+            <tr><td>Di-karaniwang ayos</td><td>Ang silid-aklatan ay tahimik.</td><td>Ang silid-aklatan</td><td>ay tahimik</td></tr>
+            <tr><td>Di-karaniwang ayos</td><td>Ang mga bata ay naglalaro sa labas.</td><td>Ang mga bata</td><td>ay naglalaro sa labas</td></tr>
+          </table>
         </article>
 
-        <!-- Lesson 2 -->
-        <article class="lesson" id="finals-2">
-          <h3><span class="ph">walalang</span></h3>
-
-          <h4>Paliwanag</h4>
-          <p><span class="ph">ambot lang</span></p>
-
-          <h4>Mga halimbawa</h4>
-          <ul>
-            <li><span class="ph">jeohlee</span></li>
-            <li><span class="ph">jeohlee</span></li>
-            <li><span class="ph">jeohlee</span></li>
-            <li><span class="ph">jeohlee</span></li>
-          </ul>
-
-          <h4>Biswal</h4>
-          <div class="visual"><span class="ph">tangina lala</span></div>
-
-        </article>
       </section>
 
-      <!-- ===================================================
-           SANGGUNIAN (References)
-           List the books, websites, or materials you used.
-           =================================================== -->
       <section class="block" id="sanggunian">
         <h2>Sanggunian</h2>
         <p class="term-intro">Mga pinagkunan ng impormasyon.</p>
         <div class="panel">
           <p>Alcaraz, C. V., Jocson, M. O., &amp; Villafuerte, P. V. <em>Komunikasyon sa Akademikong Filipino</em>.</p>
-          <p>Mga modyul ng Cordova Public College, Filipino 1 – Sining ng Komunikasyon (Modyul 1–3).</p>
-          <p><span class="ph">sdodmcoudnfon</span></p>
+          <p>Mga modyul ng Cordova Public College, Filipino 1 - Sining ng Komunikasyon (Modyul 1-3).</p>
+          <p><span class="ph">[Idagdag ang iba pang ginamit na sanggunian.]</span></p>
         </div>
       </section>
 
-      <!-- ===================================================
-           FOOTER (bottom of the page)
-           =================================================== -->
       <footer>
         <p>Sining ng Komunikasyon · Filipino 1 · 2026-2027</p>
       </footer>
@@ -411,7 +363,6 @@
   </main>
 </div>
 
-<!-- Link to the separate script file (menu highlight) -->
 <script src="script.js"></script>
 </body>
 </html>
