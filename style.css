@@ -572,3 +572,38 @@ nav.side .theme-toggle {
     font-size: .75rem;
   }
 }
+
+
+/* ---------------------------------------------------------------------
+   20. MOBILE NAV LAYOUT
+   On phones and tablets, the menu links sit in an even grid and the
+   theme button sits on its own row at the right.
+   --------------------------------------------------------------------- */
+@media (max-width: 860px) {
+  nav.side {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 8px var(--gutter);
+  }
+
+  nav.side .theme-toggle {
+    justify-self: end;
+    margin: 0;
+  }
+
+  nav.side ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+  }
+
+  nav.side li a {
+    text-align: center;
+    padding: 6px 2px;
+    font-size: .75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
